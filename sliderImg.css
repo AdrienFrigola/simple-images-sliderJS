@@ -1,43 +1,49 @@
-.slider{
-    position: relative;
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
+/* CSS styles for the slider container */
+.slider {
+    position: relative; /* Position relative for absolute positioning of buttons */
+    width: 100%; /* Full width of the container */
+    margin: auto; /* Center the container */
+    overflow: hidden; /* Hide overflow content */
 }
 
-.slider img{
-    width: 100%;
-    display: none;
+/* CSS styles for the slider images */
+.slider img {
+    width: 100%; /* Full width of the container */
+    display: none; /* Hide images by default */
 }
 
-img.displaySlide{
-    display: block;
-    animation-name: fade;
-    animation-duration: 1.5s;
-
+/* CSS styles for the displayed slide */
+img.displaySlide {
+    display: block; /* Show the displayed slide */
+    animation-name: fade; /* Apply fade animation */
+    animation-duration: 1.5s; /* Animation duration */
 }
 
-.slider button{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    padding: 10px, 15px;
-    background-color: hsla(0, 0%, 0%, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
+/* CSS styles for the slider navigation buttons */
+.slider button {
+    position: absolute; /* Absolute positioning for button placement */
+    top: 50%; /* Position buttons vertically at 50% from the top */
+    transform: translateY(-50%); /* Adjust buttons vertically */
+    font-size: 2rem; /* Button font size */
+    padding: 10px 15px; /* Button padding */
+    background-color: hsla(0, 0%, 0%, 0.5); /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
 }
 
-.prev{
-    left: 0;
+/* CSS styles for the previous button */
+.prev {
+    left: 0; /* Position previous button to the left */
 }
 
-.next{
-    right: 0;
+/* CSS styles for the next button */
+.next {
+    right: 0; /* Position next button to the right */
 }
 
-@keyframes fade  {
-    from {opacity: .5}
-    to {opacity: 1}
+/* CSS keyframes for fade animation */
+@keyframes fade {
+    from { opacity: 0.5; } /* Initial opacity */
+    to { opacity: 1; } /* Final opacity */
 }
